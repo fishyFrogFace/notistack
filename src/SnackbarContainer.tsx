@@ -1,8 +1,9 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/styles';
 import { SNACKBAR_INDENTS } from './utils/constants';
 import { SnackbarProviderProps } from '.';
+import { Theme } from '@material-ui/core';
 
 const collapse = {
     container: '& > .MuiCollapse-container',
@@ -11,7 +12,7 @@ const collapse = {
 
 const xsWidthMargin = 16;
 
-const useStyle = makeStyles((theme) => ({
+const useStyle = makeStyles((theme: Theme) => ({
     root: {
         boxSizing: 'border-box',
         display: 'flex',
